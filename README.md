@@ -389,7 +389,7 @@ O projeto foi construído em etapas, cada uma registrada em um commit:
 
 <div align="center">
 
-<h2>🔮 Melhorias Futuras</h2>
+<h2> Melhorias Futuras</h2>
 
 </div>
 
