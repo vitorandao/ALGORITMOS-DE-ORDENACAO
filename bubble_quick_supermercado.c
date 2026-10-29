@@ -1,6 +1,6 @@
 /*
  * ============================================================
- *  Bubble Sort x Quick Sort (etapa 2: Bubble Sort) - Organizador de Precos de Supermercado
+ *  Bubble Sort x Quick Sort (etapa 3: Quick Sort) - Organizador de Precos de Supermercado
  * ============================================================
  *  Problema: um supermercado precisa listar seus produtos do mais
  *  barato ao mais caro (comparar precos, montar ofertas, analisar
@@ -72,6 +72,41 @@ void bubble_sort(Produto v[], int n) {
     }
 }
 
+/* ---------- Quick Sort ---------- */
+
+/*
+ * Particiona v[baixo..alto] em torno de um PIVO (o ultimo elemento).
+ * Ao final, os precos <= pivo ficam a esquerda, os maiores a direita,
+ * e o pivo fica na sua posicao DEFINITIVA, cujo indice e devolvido.
+ */
+int particionar(Produto v[], int baixo, int alto) {
+    float pivo = v[alto].preco;
+    int i = baixo - 1;  /* fim da regiao dos elementos <= pivo */
+
+    for (int j = baixo; j < alto; j++) {
+        if (v[j].preco <= pivo) {
+            i++;                                /* amplia a regiao dos menores */
+            if (i != j) trocar(&v[i], &v[j]);   /* traz o menor para ela */
+        }
+    }
+
+    /* Coloca o pivo entre as duas regioes */
+    if (i + 1 != alto) trocar(&v[i + 1], &v[alto]);
+    return i + 1;
+}
+
+/*
+ * Divide para conquistar: particiona e ordena cada lado por recursao.
+ * Caso base: com 0 ou 1 elemento (baixo >= alto) ja esta ordenado.
+ */
+void quick_sort(Produto v[], int baixo, int alto) {
+    if (baixo < alto) {
+        int p = particionar(v, baixo, alto);  /* pivo ja esta no lugar */
+        quick_sort(v, baixo, p - 1);          /* lado dos menores */
+        quick_sort(v, p + 1, alto);           /* lado dos maiores */
+    }
+}
+
 int main(void) {
     const Produto original[N] = {
         {"Arroz 5kg", 27.90f},   {"Feijao 1kg", 8.49f},   {"Cafe 500g", 16.75f},
@@ -79,12 +114,16 @@ int main(void) {
         {"Macarrao 500g", 4.29f},{"Sabao em po", 18.50f}, {"Biscoito", 3.99f},
         {"Farinha 1kg", 5.49f},  {"Manteiga", 12.90f},    {"Banana 1kg", 5.49f}
     };
-    Produto bolha[N];
+    Produto bolha[N], rapido[N];
 
     copiar(original, bolha, N);
+    copiar(original, rapido, N);
     bubble_sort(bolha, N);
+    quick_sort(rapido, 0, N - 1);
 
     printf("--- Bubble Sort (crescente) ---\n");
     exibir(bolha, N);
+    printf("\n--- Quick Sort (crescente) ---\n");
+    exibir(rapido, N);
     return 0;
 }
