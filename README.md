@@ -143,7 +143,7 @@ depois: repete em {2, 1} e em {5, 4}
 
 <div align="center">
 
-<h2>⚙️ Funcionalidades</h2>
+<h2> Funcionalidades</h2>
 
 </div>
 
@@ -191,7 +191,7 @@ depois: repete em {2, 1} e em {5, 4}
 </div>
 
 <details open>
-<summary><strong>📟 Visualizar a opção 3 (comparar os dois)</strong></summary>
+<summary><strong> Visualizar a opção 3 (comparar os dois)</strong></summary>
 
 <br/>
 
