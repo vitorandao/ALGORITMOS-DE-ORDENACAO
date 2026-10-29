@@ -19,7 +19,7 @@
 
 <div align="center">
 
-<h2>📖 Sobre o Projeto</h2>
+<h2> Sobre o Projeto</h2>
 
 Este projeto é uma aplicação em <strong>linguagem C</strong> que ordena os <strong>mesmos dados</strong> com dois algoritmos, o <strong>Bubble Sort</strong> e o <strong>Quick Sort</strong>, e mostra quanto trabalho (comparações e trocas) cada um precisou fazer.
 
@@ -35,7 +35,7 @@ Ele faz parte dos meus estudos em <strong>Engenharia de Software</strong>, na di
 
 <div align="center">
 
-<h2>🛒 Situação-Problema</h2>
+<h2> Situação-Problema</h2>
 
 </div>
 
@@ -47,28 +47,28 @@ A aplicação guarda **12 registros** (nome e preço), ordena uma cópia dos dad
 
 <div align="center">
 
-<h2>🎯 Objetivos do Projeto</h2>
+<h2> Objetivos do Projeto</h2>
 
 </div>
 
 <table>
 <tr>
 <td align="center" width="50%">
-<h3>🫧 Bubble Sort</h3>
+<h3> Bubble Sort</h3>
 Implementar a ordenação por comparação e troca de elementos vizinhos.
 </td>
 <td align="center" width="50%">
-<h3>⚡ Quick Sort</h3>
+<h3> Quick Sort</h3>
 Implementar a ordenação por divisão e conquista, com pivô e recursão.
 </td>
 </tr>
 <tr>
 <td align="center">
-<h3>🔁 Mesmos dados</h3>
+<h3> Mesmos dados</h3>
 Ordenar cópias da mesma lista para que a comparação seja justa.
 </td>
 <td align="center">
-<h3>📊 Medir</h3>
+<h3> Medir</h3>
 Contar comparações e trocas de cada algoritmo e interpretar a diferença.
 </td>
 </tr>
@@ -78,7 +78,7 @@ Contar comparações e trocas de cada algoritmo e interpretar a diferença.
 
 <div align="center">
 
-<h2>🧠 Os Algoritmos</h2>
+<h2> Os Algoritmos</h2>
 
 </div>
 
@@ -100,7 +100,7 @@ Contar comparações e trocas de cada algoritmo e interpretar a diferença.
 </table>
 
 <details>
-<summary><strong>🔍 Visualizar exemplo do Bubble Sort (uma passada)</strong></summary>
+<summary><strong> Visualizar exemplo do Bubble Sort (uma passada)</strong></summary>
 
 <br/>
 
@@ -115,7 +115,7 @@ Vetor `{5, 2, 4, 1}`:
 </details>
 
 <details>
-<summary><strong>🔍 Visualizar exemplo do Quick Sort (uma partição)</strong></summary>
+<summary><strong> Visualizar exemplo do Quick Sort (uma partição)</strong></summary>
 
 <br/>
 
@@ -137,7 +137,7 @@ depois: repete em {2, 1} e em {5, 4}
 | Estável | Sim | Não |
 | Usa recursão | Não | Sim |
 
-> ⚠️ Com o pivô sendo o **último** elemento, o pior caso do Quick Sort acontece quando o vetor **já vem ordenado** (ou com todos os valores iguais). Veja os testes em [`docs/testes.md`](docs/testes.md): nesse caso o Bubble Sort, com a parada antecipada, ganha.
+>  Com o pivô sendo o **último** elemento, o pior caso do Quick Sort acontece quando o vetor **já vem ordenado** (ou com todos os valores iguais). Veja os testes em [`docs/testes.md`](docs/testes.md): nesse caso o Bubble Sort, com a parada antecipada, ganha.
 
 <br/>
 
@@ -153,31 +153,31 @@ depois: repete em {2, 1} e em {5, 4}
 <th align="center">Descrição</th>
 </tr>
 <tr>
-<td>📦 Registros</td>
+<td> Registros</td>
 <td>12 produtos com nome e preço, guardados em uma <code>struct</code>.</td>
 </tr>
 <tr>
-<td>🫧 Bubble Sort</td>
+<td> Bubble Sort</td>
 <td>Ordenação crescente por preço, com parada antecipada.</td>
 </tr>
 <tr>
-<td>⚡ Quick Sort</td>
+<td> Quick Sort</td>
 <td>Ordenação crescente por preço, com pivô e recursão.</td>
 </tr>
 <tr>
-<td>🔁 Mesmos dados</td>
+<td> Mesmos dados</td>
 <td>Cada algoritmo ordena uma cópia da lista original.</td>
 </tr>
 <tr>
-<td>👀 Antes e depois</td>
+<td> Antes e depois</td>
 <td>A lista é exibida antes e depois de cada ordenação.</td>
 </tr>
 <tr>
-<td>📊 Comparação</td>
+<td> Comparação</td>
 <td>Tabela com comparações e trocas, e conferência de que os dois resultados têm a mesma sequência de preços.</td>
 </tr>
 <tr>
-<td>🧭 Menu</td>
+<td> Menu</td>
 <td>Escolha entre Bubble, Quick, comparar os dois ou sair; entradas inválidas são tratadas.</td>
 </tr>
 </table>
@@ -186,7 +186,7 @@ depois: repete em {2, 1} e em {5, 4}
 
 <div align="center">
 
-<h2>🖥️ Exemplo de Execução</h2>
+<h2> Exemplo de Execução</h2>
 
 </div>
 
@@ -251,12 +251,12 @@ Com os dados de exemplo, o Quick Sort fez cerca de metade das comparações e me
 
 <div align="center">
 
-<h2>🚀 Como Executar o Projeto</h2>
+<h2> Como Executar o Projeto</h2>
 
 </div>
 
 <details open>
-<summary><strong>💻 Visualizar compilação e execução</strong></summary>
+<summary><strong> Visualizar compilação e execução</strong></summary>
 
 <br/>
 
@@ -291,7 +291,7 @@ Digite `3` para comparar os dois algoritmos e `0` para sair.
 
 <div align="center">
 
-<h2>🌐 Execução Online</h2>
+<h2> Execução Online</h2>
 
 </div>
 
@@ -307,7 +307,7 @@ Digite `3` para comparar os dois algoritmos e `0` para sair.
 
 <div align="center">
 
-<h2>🧰 Tecnologias Utilizadas</h2>
+<h2> Tecnologias Utilizadas</h2>
 
 <img src="https://skillicons.dev/icons?i=c,git,github,vscode,linux&theme=dark" alt="Tecnologias do projeto"/>
 
@@ -327,12 +327,12 @@ Digite `3` para comparar os dois algoritmos e `0` para sair.
 
 <div align="center">
 
-<h2>🗂️ Estrutura do Projeto</h2>
+<h2> Estrutura do Projeto</h2>
 
 </div>
 
 <details>
-<summary><strong>📁 Visualizar estrutura de pastas</strong></summary>
+<summary><strong> Visualizar estrutura de pastas</strong></summary>
 
 <br/>
 
@@ -352,7 +352,7 @@ ALGORITMOS-DE-ORDENACAO/
 
 <div align="center">
 
-<h2>✅ Requisitos da Atividade</h2>
+<h2> Requisitos da Atividade</h2>
 
 </div>
 
@@ -370,7 +370,7 @@ ALGORITMOS-DE-ORDENACAO/
 
 <div align="center">
 
-<h2>🌱 Evolução do Desenvolvimento</h2>
+<h2> Evolução do Desenvolvimento</h2>
 
 </div>
 
@@ -402,7 +402,7 @@ O projeto foi construído em etapas, cada uma registrada em um commit:
 
 <div align="center">
 
-<h2>🎓 Aprendizados Esperados</h2>
+<h2> Aprendizados Esperados</h2>
 
 Ao longo do desenvolvimento, o objetivo é colocar em prática:
 
@@ -410,7 +410,7 @@ Ao longo do desenvolvimento, o objetivo é colocar em prática:
 
 <br/><br/>
 
-<h2>👨‍💻 Desenvolvedor</h2>
+<h2> Desenvolvedor</h2>
 
 <strong>Vitor Brandão Machado</strong>
 
