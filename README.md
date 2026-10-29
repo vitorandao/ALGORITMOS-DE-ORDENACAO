@@ -283,7 +283,7 @@ gcc bubble_quick_supermercado.c -o ordenador
 
 Digite `3` para comparar os dois algoritmos e `0` para sair.
 
-**Sem instalar nada:** copie o conteúdo de `bubble_quick_supermercado.c` no [OnlineGDB](https://www.onlinegdb.com/online_c_compiler), escolha a linguagem **C** e clique em **Run**.
+**Sem instalar nada:** [abra o programa no OnlineGDB](https://onlinegdb.com/q3VGF-bWA) e clique em **Run**.
 
 </details>
 
@@ -297,7 +297,7 @@ Digite `3` para comparar os dois algoritmos e `0` para sair.
 
 <div align="center">
 
-<a href="COLE_AQUI_O_LINK_COMPARTILHADO_DO_ONLINEGDB">
+<a href="https://onlinegdb.com/q3VGF-bWA">
 <img src="https://img.shields.io/badge/Executar%20online-OnlineGDB-1D4ED8?style=for-the-badge&logo=gnu&logoColor=white" alt="Executar online no OnlineGDB"/>
 </a>
 
